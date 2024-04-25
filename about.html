@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCT </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="logo.jpg" id="thelogo"alt="the logo"></a>
+       
+            <div class="nav-links" id="navlinks">
+                <i class="fa-regular fa-circle-xmark" id="menu" onclick="hidemenu()"></i>
+                
+                <ul id="navtag">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  id="close" onclick="showmenu()"></i>
+             
+        </nav>
+    <h1>About US</h1>
+    </section>
+    <!--------------about-us content-->
+
+    <section class="aboutus">
+        <div class="row">
+            <div class="aboutcol">
+            <h1>We are the world's largest university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo expedita autem repudiandae! Nesciunt recusandae aperiam, ut, beatae tenetur, temporibus quae magni nemo dolore excepturi ex reprehenderit ad odio quasi.</p>
+            <a href="https://www.kct.ac.in/" class="button" id="buton">EXPLORE NOW</a>
+        </div>
+        <div class="aboutcol">
+            <img src="eduford_img/about.jpg">
+
+        </div>
+    </div>
+    </section>
+
+
+<!------------footer------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem labore, optio, ullam harum esse vero commodi voluptatum, <br> maiores adipisci fuga debitis saepe. Eos rerum obcaecati porro voluptas exercitationem quidem?</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        
+
+    </div>
+    <p>Made by ABINAYA AV</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------JAVASCRIPT for toggle menu-------------------->
+<script>
+   var navlinks=document.getElementById("navlinks")
+   
+    var menuButton = document.getElementById("menu");
+    var closeButton = document.getElementById("close");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+</script>
+<script src="https://kit.fontawesome.com/66ff171168.js" crossorigin="anonymous"></script>
+</body>
+</html>
